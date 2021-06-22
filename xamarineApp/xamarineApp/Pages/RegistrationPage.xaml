@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="xamarineApp.RegistrationPage">
+    <ContentPage.Content>
+        <StackLayout Margin="10">
+            <Label Text="Страница регистрации"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Entry x:Name="EntryName" Placeholder="Имя"></Entry>
+            <Entry x:Name="EntryPassword" Placeholder="Пароль" ></Entry>
+            <Button x:Name="registration" Text="Зарегистирироваться" Clicked="ButtonRegistration_click"></Button>
+            <Button x:Name="autorization" Text="Авторизация" Clicked="ButtonAutorisation_click"></Button>
+
+            <FlexLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+            </FlexLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
